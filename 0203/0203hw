@@ -1,0 +1,38 @@
+### 1. 파일 입력 연습
+어떤 텍스트 파일을 읽어 matrix로 리턴해주는 함수를 만들어보세요.
+텍스트파일 예제로는 mat1.txt 과 mat2.txt 가 주어집니다.
+
+예)
+mat1.txt가
+1 2 3 5
+3 5 2 1
+5 3 1 5
+이면, [[1, 2, 3, 5], [3, 5, 2, 1], [5, 3, 1, 5]] 인 리스트를 리턴해 보세요.
+
+힌트) 아래와 같은 skeleton code 를 사용할 수 있습니다.
+
+  ```
+  def read_matrix(filename):
+    # Read the file
+    f = ???
+
+    # Get the file contents
+    contents = ???
+
+    # Parse the contents and make it in a matrix form
+    ???
+
+    # Return the matrix
+    ???
+  ```
+
+### 2. 파일 출력 연습
+어떠한 리스트를 csv (comma-separated values) 포맷으로 텍스트파일에 저장해보세요.
+
+예)
+[[1, 2, 3, 5], [3, 5, 2, 1], [5, 3, 1, 5]]
+라는 리스트가 주어져 있으면
+1,2,3,5
+3,5,2,1
+5,3,1,5
+로 텍스트파일(파일 이름 맘대로)에 저장해 보세요.
