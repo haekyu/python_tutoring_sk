@@ -30,13 +30,13 @@ def quick_sort(lst):
                     right_fin -= 1
                     
                 else:
-                    new_left =  lst[right_fin]
+                    new_left = lst[right_fin]
                     new_right = lst[left_fin]
                     lst[left_fin] = new_left
                     lst[right_fin] = new_right
                     print('swap 후', lst)
                     
-        #자리 바꾸고 나누기
+        # 자리 바꾸고 나누기
         print('out because', left_fin, right_fin, 'is equal')
         r += 1
         new_zero = lst[right_fin]
@@ -45,16 +45,17 @@ def quick_sort(lst):
         print('round %d finish' % r, lst)
         
         lst_left = lst[0:right_fin]
-        lst_right = lst[right_fin:len(lst)]
+        lst_right = lst[right_fin + 1:len(lst)]
         
-        #재귀
+        # 재귀
         lst[0:right_fin] = quick_sort(lst_left)
-        lst[right_fin:] = quick_sort(lst_right)
+        lst[right_fin + 1:] = quick_sort(lst_right)
         
         return lst
 
-#lst = [3,1,5,6,8,0,1,3,4,23,25,2,1]
-lst = [9,0,2,1, 3, 7]
+
+# lst = [3, 1, 5, 6, 8, 0, 1, 3, 4, 23, 25, 2, 1]
+lst = [9, 0, 2, 1, 3, 7]
 sorted_lst = quick_sort(lst)
 print(sorted_lst)
 
